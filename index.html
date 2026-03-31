@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toko AFIFA AI - Toko AI Digital</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- CSS External -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+    <div class="logo">🚀 <span>Toko AFIFA AI</span> | Solusi AI Digital</div>
+    <div class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#products">Produk</a>
+        <a href="#request">Request</a>
+        <a href="#contact">Kontak</a>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<section id="home" class="hero">
+    <div class="hero-text">
+        <h1>Jasa & Produk AI<br>Untuk Bisnis & Kreator</h1>
+        <p>Dari E-book, Template Prompt, hingga Setup Chatbot WA + AI. Semua tersedia di Toko AFIFA AI.</p>
+        <a href="#products" class="btn">Lihat Koleksi <i class="fas fa-arrow-right"></i></a>
+        <a href="https://wa.me/6282146423256?text=Halo%20Toko%20AFIFA%20AI%2C%20saya%20mau%20tanya%20produk" class="btn btn-wa">Chat WA <i class="fab fa-whatsapp"></i></a>
+    </div>
+    <div class="hero-image">
+        <i class="fas fa-brain"></i>
+    </div>
+</section>
+
+<!-- Produk Section -->
+<section id="products">
+    <h2 class="section-title">✨ Produk Unggulan ✨</h2>
+    <div class="filter-bar">
+        <button class="filter-btn active" data-cat="all">Semua</button>
+        <button class="filter-btn" data-cat="ebook">E-book</button>
+        <button class="filter-btn" data-cat="prompt">Template Prompt</button>
+        <button class="filter-btn" data-cat="jasa">Jasa Setup AI</button>
+        <button class="filter-btn" data-cat="tools">Tools Digital</button>
+    </div>
+    <div class="product-grid" id="productGrid"></div>
+</section>
+
+<!-- Staff Section -->
+<div class="staff-section">
+    <h2 class="section-title">👥 Tim Toko AFIFA AI</h2>
+    <div class="staff-grid">
+        <div class="staff-card" onclick="openStaffModal('afifa')">
+            <i class="fas fa-user-circle"></i>
+            <h3>AFIFA</h3>
+            <p>Owner & AI Specialist</p>
+            <small>+62 821-4642-3256</small>
+        </div>
+        <div class="staff-card" onclick="openStaffModal('alwan')">
+            <i class="fas fa-user-tie"></i>
+            <h3>Alwan</h3>
+            <p>Co-Founder & Developer</p>
+            <small>+62 852-1868-2038</small>
+        </div>
+        <div class="staff-card" onclick="openStaffModal('rina')">
+            <i class="fas fa-chalkboard-user"></i>
+            <h3>Rina</h3>
+            <p>Customer Support</p>
+            <small>Fast response WA</small>
+        </div>
+        <div class="staff-card" onclick="openStaffModal('andi')">
+            <i class="fas fa-chart-line"></i>
+            <h3>Andi</h3>
+            <p>AI Trainer</p>
+            <small>Expert Prompt Engineer</small>
+        </div>
+    </div>
+</div>
+
+<!-- Request Form -->
+<div id="request" class="request-form">
+    <h2 class="section-title">📢 Request Produk AI Custom</h2>
+    <p>Butuh produk AI yang belum ada? Request aja, kita buatin!</p>
+    <form id="requestForm">
+        <input type="text" id="reqName" placeholder="Nama kamu" required>
+        <input type="text" id="reqWa" placeholder="No WhatsApp" required>
+        <textarea id="reqMsg" rows="3" placeholder="Request produk AI yang diinginkan..."></textarea>
+        <button type="submit" class="btn" id="submitRequestBtn">Kirim Request via WA</button>
+    </form>
+</div>
+
+<!-- Footer -->
+<footer id="contact">
+    <h3>📞 Hubungi Kami</h3>
+    <p><i class="fab fa-whatsapp"></i> 0821-4642-3256 (AFIFA - Owner)</p>
+    <p><i class="fab fa-whatsapp"></i> 0852-1868-2038 (Alwan - Developer)</p>
+    <p><i class="fas fa-envelope"></i> tokoafifaai@gmail.com</p>
+    <div class="social-icons">
+        <a href="https://www.instagram.com/tokoafifa_ai/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i> @tokoafifa_ai</a>
+        <a href="https://www.tiktok.com/@toko_afifa_ai" target="_blank" rel="noopener noreferrer"><i class="fab fa-tiktok"></i> @toko_afifa_ai</a>
+        <a href="https://www.youtube.com/@TokoAFIFA_AI" target="_blank" rel="noopener noreferrer"><i class="fab fa-youtube"></i> Toko AFIFA AI</a>
+    </div>
+    <p>📍 Official Partner Lynk: <a href="https://lynk.id/toko_fifa" target="_blank" rel="noopener noreferrer">lynk.id/toko_fifa</a></p>
+    <p>© 2025 Toko AFIFA AI - Solusi AI Digital Indonesia</p>
+</footer>
+
+<!-- Modal -->
+<div id="staffModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeStaffModal()">&times;</span>
+        <div id="staffModalBody"></div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
