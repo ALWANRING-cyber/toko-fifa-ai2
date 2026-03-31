@@ -1,7 +1,7 @@
 // DATA PRODUK (12 Produk)
 const products = [
     // E-BOOKS
-    { name: "E-book AI Super Pemula", category: "ebook", price: "Rp49.000", desc: "Panduan lengkap AI dari nol. 150 halaman + bonus prompt.", icon: "fas fa-book", link: "https://lynk.id/toko_fifa/ebook-ai" },
+    { name: "E-book AI Super Pemula", category: "ebook", price: "Rp49.000", desc: "Panduan lengkap AI dari nol. 150 halaman + bonus prompt.", icon: "fas fa-book", link: "http://lynk.id/toko_fifa/28542w50kg4r/checkout" },
     { name: "E-book ChatGPT Mastery", category: "ebook", price: "Rp69.000", desc: "Cara jadi power user ChatGPT, prompt lanjutan.", icon: "fas fa-robot", link: "https://lynk.id/toko_fifa/chatgpt-master" },
     { name: "E-book AI untuk UMKM", category: "ebook", price: "Rp59.000", desc: "Strategi AI untuk bisnis kecil menengah.", icon: "fas fa-store", link: "https://lynk.id/toko_fifa/ai-umkm" },
     
